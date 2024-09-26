@@ -1,4 +1,9 @@
 export const taskData = {
+  staticData: {
+    targetPage:
+      "https://ware-jdm.jd.com/productLauchNew/productLauchNew?source=1",
+    jqueryUrl: "https://code.jquery.com/jquery-3.6.0.min.js",
+  },
   firstCategory: {
     containerSelector:
       "#app > div.page-product-lauch-new > div:nth-child(1) > div.lauch-process-content-bgc.category-lauch-tabpane > div > div > div.lauch-process-content-inner.productlaunch-container > div > div.ware-components__wrap > div.vc-category-select > div > div > div > div:nth-child(1) > div:nth-child(1)",

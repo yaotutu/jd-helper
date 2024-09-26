@@ -1,32 +1,17 @@
-import { taskData } from "./taskData.js";
-import {
-  launchBrowser,
-  waitForAndClickCategory,
-  clickNextStepButton,
-} from "./puppeteerHelper.js";
-
-const jqueryUrl = "https://code.jquery.com/jquery-3.6.0.min.js"; // jQuery CDN 地址
-const targetPage =
-  "https://ware-jdm.jd.com/productLauchNew/productLauchNew?source=1";
+import { selectCategoriesAndProceed } from "./categorySelector.js";
+import { setupBrowser } from "./browserSetup.js";
 
 const run = async () => {
-  const browser = await launchBrowser();
-  const page = await browser.newPage();
-  await page.setViewport({ width: 1280, height: 768 });
+  const { browser, page } = await setupBrowser();
 
-  await page.goto(targetPage);
-  await page.addScriptTag({ url: jqueryUrl });
+  await selectCategoriesAndProceed(page);
 
-  await waitForAndClickCategory(page, taskData.firstCategory);
-  await waitForAndClickCategory(page, taskData.secondCategory);
-  await waitForAndClickCategory(page, taskData.thirdCategory);
-  await clickNextStepButton(page, taskData.nextStepButton);
+  //  等待页面跳转完成
+  await new Promise((resolve) => setTimeout(resolve, 9000));
 
+  console.log("页面跳转完成");
   console.log("程序已暂停，然后按 Enter 继续...");
   await new Promise((resolve) => process.stdin.once("data", resolve));
-
-  const content = await page.content();
-  console.log(content);
 
   await browser.close();
 };
