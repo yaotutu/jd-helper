@@ -1,0 +1,91 @@
+# 忽略所有 .log 文件
+*.log
+
+# 忽略 npm 缓存目录
+npm-debug.log*
+node_modules/
+
+# 忽略 yarn 缓存目录
+yarn-error.log*
+.yarn-cache/
+.yarn-integrity
+.yarn-metadata.json
+.yarnrc
+.yarn.lock
+
+# 忽略 pnpm 缓存目录
+.pnpm-store/
+.pnpmfile.js
+.pnpm-debug.log
+.pnpm-lock.yaml
+
+# 忽略编辑器和 IDE 生成的文件
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.bak
+*.tmp
+*.aux
+*.lof
+*.log
+*.toc
+*.pdf
+*.dvi
+*.ps
+*.4tc
+*.idv
+*.glo
+*.idx
+*.ilg
+*.ind
+*.ist
+*.out
+*.toc
+*.aux
+*.bbl
+*.blg
+*.synctex.gz
+*.nav
+*.snm
+*.vrb
+*.fls
+*.fdb_latexmk
+*.bcf
+*.run.xml
+
+# 忽略 macOS 和 Linux 系统文件
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+*.DS_Store
+.AppleDouble
+.LSOverride
+
+# 忽略 Docker 相关文件
+.dockerenv
+.docker-compose.override.yml
+.docker-compose.yml
+
+# 忽略环境变量文件
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# 忽略构建输出
+dist/
+build/
+public/build/
+
+# 忽略测试覆盖率报告
+coverage/
+.nyc_output/
+
+# 忽略 TypeScript 编译输出
+*.tsbuildinfo
