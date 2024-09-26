@@ -18,6 +18,9 @@ importers:
       '@rollup/plugin-node-resolve':
         specifier: ^15.3.0
         version: 15.3.0(rollup@4.22.4)
+      '@rollup/plugin-run':
+        specifier: ^3.1.0
+        version: 3.1.0(rollup@4.22.4)
       concurrently:
         specifier: ^9.0.1
         version: 9.0.1
@@ -64,6 +67,15 @@ packages:
     engines: {node: '>=14.0.0'}
     peerDependencies:
       rollup: ^2.78.0||^3.0.0||^4.0.0
+    peerDependenciesMeta:
+      rollup:
+        optional: true
+
+  '@rollup/plugin-run@3.1.0':
+    resolution: {integrity: sha512-k2daijcVA8RAG1PXUFtIAOmb9ifiMv6Kth3Y9OhZ8/W+j8eTgZkVsOmBQD11HaeY1rYqRb0aLjX4e2V9bpS01Q==}
+    engines: {node: '>=14.0.0'}
+    peerDependencies:
+      rollup: ^2.0.0||^3.0.0||^4.0.0
     peerDependenciesMeta:
       rollup:
         optional: true
@@ -165,6 +177,9 @@ packages:
 
   '@types/estree@1.0.6':
     resolution: {integrity: sha512-AYnb1nQyY49te+VRAVgmzfcgjYS91mY5P0TKUDCLEM+gNnA+3T6rWITXRLYCpahpqSQbN5cE+gHpnPyXjHWxcw==}
+
+  '@types/node@14.18.30':
+    resolution: {integrity: sha512-8OEyg4oc/CqN5+LbInKNLA8MfbGzbC+k8lVPePXazuwEVrVeQ9gwMDX00HJwWbC7syc1FWRU6Mow0Lm+mibHAQ==}
 
   '@types/node@22.7.0':
     resolution: {integrity: sha512-MOdOibwBs6KW1vfqz2uKMlxq5xAfAZ98SZjO8e3XnAbFnTJtAspqhWk7hrdSAs9/Y14ZWMiy7/MxMUzAOadYEw==}
@@ -822,6 +837,12 @@ snapshots:
     optionalDependencies:
       rollup: 4.22.4
 
+  '@rollup/plugin-run@3.1.0(rollup@4.22.4)':
+    dependencies:
+      '@types/node': 14.18.30
+    optionalDependencies:
+      rollup: 4.22.4
+
   '@rollup/pluginutils@5.1.2(rollup@4.22.4)':
     dependencies:
       '@types/estree': 1.0.6
@@ -883,6 +904,8 @@ snapshots:
   '@types/estree@1.0.5': {}
 
   '@types/estree@1.0.6': {}
+
+  '@types/node@14.18.30': {}
 
   '@types/node@22.7.0':
     dependencies:

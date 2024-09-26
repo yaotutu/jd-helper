@@ -1,3 +1,3 @@
-console.log("Hello, Rollup in ESM!");
-console.log("Hello, Rollup in ESM!");
-console.log("Hello, Rollup in ESM!!");
+import pubProduct from "./pubProduct";
+
+pubProduct();
