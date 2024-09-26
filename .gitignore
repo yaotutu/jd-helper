@@ -89,3 +89,5 @@ coverage/
 
 # 忽略 TypeScript 编译输出
 *.tsbuildinfo
+
+user_data
