@@ -1,5 +1,6 @@
 import { taskData } from "./taskData.js";
 import { clickButton } from "./puppeteerHelper.js";
+const { stepOne } = taskData;
 
 // 点击商品类目
 const clickCategoryItem = async (page, containerSelector, targetText) => {
@@ -51,10 +52,10 @@ const waitForAndClickCategory = async (page, category) => {
 };
 
 export const selectCategoriesAndProceed = async (page) => {
-  await waitForAndClickCategory(page, taskData.firstCategory);
-  await waitForAndClickCategory(page, taskData.secondCategory);
-  await waitForAndClickCategory(page, taskData.thirdCategory);
-  await clickButton(page, taskData.nextStepButton);
+  await waitForAndClickCategory(page, stepOne.firstCategory);
+  await waitForAndClickCategory(page, stepOne.secondCategory);
+  await waitForAndClickCategory(page, stepOne.thirdCategory);
+  await clickButton(page, stepOne.nextStepButton);
 
   // 等待页面跳转完成
   await new Promise((resolve) => setTimeout(resolve, 9000));
