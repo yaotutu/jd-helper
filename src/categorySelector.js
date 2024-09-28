@@ -1,6 +1,7 @@
 import { taskData } from "./taskData.js";
 import { clickButton } from "./puppeteerHelper.js";
 const { stepOne } = taskData;
+const { jqueryUrl } = taskData.staticData;
 
 // 自定义 waitForSelector 函数
 const waitForSelector = async (page, selector, timeout = 10000) => {
@@ -62,6 +63,9 @@ const waitForAndClickCategory = async (page, category) => {
 
 // 主函数
 export const selectCategoriesAndProceed = async (page) => {
+  // 注入 jQuery
+  await page.addScriptTag({ url: jqueryUrl });
+
   const categories = [
     stepOne.firstCategory,
     stepOne.secondCategory,
@@ -82,5 +86,4 @@ export const selectCategoriesAndProceed = async (page) => {
 
   // 等待页面跳转完成
   await new Promise((resolve) => setTimeout(resolve, 9000));
-  console.log("页面跳转完成");
 };

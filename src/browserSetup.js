@@ -1,6 +1,6 @@
 import puppeteer from "puppeteer";
 import { taskData } from "./taskData.js";
-const { targetPage, jqueryUrl } = taskData.staticData;
+const { targetPage } = taskData.staticData;
 /**
  * 设置浏览器并返回浏览器和页面对象
  *
@@ -20,7 +20,5 @@ export const setupBrowser = async () => {
   const page = await browser.newPage();
   await page.setViewport({ width: 1280, height: 768 });
   await page.goto(targetPage);
-  await page.addScriptTag({ url: jqueryUrl });
-
   return { browser, page };
 };
