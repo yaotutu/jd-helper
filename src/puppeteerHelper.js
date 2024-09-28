@@ -15,24 +15,22 @@ export const clickButton = async (page, button, source = "") => {
 };
 
 // 设置输入框的值
-export const setInputValue = async (page, inputSelector, value) => {
-  console.log(`设置输入框"${inputSelector}"的值为"${value}"`);
-  await page.waitForSelector(containerSelector, { timeout: 10000 });
+export const setInputValue = async (page, inputId, value) => {
   await new Promise((resolve) => setTimeout(resolve, 2000));
   return await page.evaluate(
-    (inputSelector, value) => {
-      const $inputElement = $(inputSelector);
+    (inputId, value) => {
+      const containerSelector = `[id^='rc-id-'][id$='-${inputId}']`;
+      const $inputElement = $(containerSelector);
 
       if ($inputElement.length === 0) {
-        console.error(`${inputSelector} 未找到`);
+        console.error(`${inputId} 未找到`);
         return false;
       }
-
       // 设置输入框的值并触发输入事件
       $inputElement.val(value).trigger("input");
       return true;
     },
-    inputSelector,
+    inputId,
     value
   );
 };
