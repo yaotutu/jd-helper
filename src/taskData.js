@@ -32,5 +32,12 @@ export const taskData = {
       inputId: 95,
       value: "测试商品标题",
     },
+    brandId: {
+      type: "select",
+      inputId: 96,
+      dropdownContainerSelector:
+        "#rc-popper-container-3452 > div:nth-child(2) > div > div.rcd-scrollbar > div.rcd-select-dropdown__wrap.rcd-scrollbar__wrap.rcd-scrollbar__wrap--hidden-default > ul",
+      value: "无品牌",
+    },
   },
 };
