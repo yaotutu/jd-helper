@@ -1,0 +1,187 @@
+{
+  "saveProductReq": {
+    "publishType": 1,
+    "product": {
+      "imageMap": {
+        "0000000000": [
+          {
+            "colorId": "0000000000",
+            "imgIndex": 1,
+            "imgUrl": "jfs/t1/131502/38/45680/61305/66f6bc64F47f417cd/42a33aa529d7da75.jpg"
+          }
+        ]
+      },
+      "rectangleImageMap": { "0000000000": [] },
+      "mainImg": null,
+      "customProps": [],
+      "zhuangBaId": "66f8c1b9e4b008d7173879f9",
+      "notes": null,
+      "introductionUseFlag": "0",
+      "introductionModelFlag": "0",
+      "zhuangBaIntroduction": null,
+      "wareType": "spu",
+      "promiseId": 59368956,
+      "reserved": {
+        "isPaymentCouponCategory": false,
+        "productStatus": 0,
+        "availableFeatures": [
+          "isjq",
+          "isvat",
+          "Customize",
+          "isdq",
+          "kshwsp",
+          "isPayFirst",
+          "wbdxsply",
+          "is7ToReturn",
+          "zbxx",
+          "isWeChatStock",
+          "unit",
+          "idxGoods",
+          "model",
+          "isdangergoods",
+          "isOnlyIOUsPay",
+          "isCheckCode",
+          "maxBuyTimes"
+        ],
+        "promiseBindType": "spu",
+        "tsfw1": []
+      },
+      "features": {
+        "kshwsp": "0",
+        "is7ToReturn": "1",
+        "isCertificate": null,
+        "isOfflinePreview": null,
+        "isAuthorize": null,
+        "Customize": "0"
+      },
+      "wareUpDownTimer": {},
+      "productTitle": {
+        "titleBrandName": null,
+        "recommendWords": null,
+        "title": "test-测试标题"
+      },
+      "brandId": -1,
+      "productProp": { "243225": "1423297", "243237": null },
+      "spuImg": {
+        "imageMap": [
+          {
+            "colorId": "0000000000",
+            "imgIndex": 1,
+            "imgUrl": "jfs/t1/131502/38/45680/61305/66f6bc64F47f417cd/42a33aa529d7da75.jpg"
+          }
+        ],
+        "rectangleImageMap": []
+      },
+      "videoList": null,
+      "skus": [
+        {
+          "uuid": "72f7e0de-1d3a-4ec9-b0d1-03cec9539b06",
+          "attrKeys": [],
+          "skuEnableStatus": true,
+          "props": [],
+          "skuProps": [
+            {
+              "attrId": "243196",
+              "attrValueAlias": [],
+              "attrValues": ["1404375"],
+              "customAttrValues": [],
+              "customPropsMode": null,
+              "expands": [],
+              "features": [],
+              "index": 0,
+              "units": []
+            },
+            {
+              "attrId": "243210",
+              "attrValueAlias": [],
+              "attrValues": ["1404388"],
+              "customAttrValues": [],
+              "customPropsMode": null,
+              "expands": [],
+              "features": [],
+              "index": 0,
+              "units": []
+            }
+          ],
+          "skuPropsNum": 2,
+          "prefill": [],
+          "rowIndex": 0,
+          "jdPrice": "111",
+          "incrementStockNum": "222"
+        }
+      ],
+      "productDesc": {
+        "notes": null,
+        "introductionUseFlag": "0",
+        "introductionModelFlag": "0",
+        "zhuangBaIntroduction": null,
+        "zhuangBaId": "66f8c1b9e4b008d7173879f9"
+      },
+      "deliveryInfo": { "wareType": "spu", "promiseId": 59368956 },
+      "transportId": "8999159",
+      "sevenReturnInfo": {
+        "is7ToReturn": "1",
+        "isCertificate": null,
+        "isOfflinePreview": null,
+        "isAuthorize": null
+      },
+      "payTypeLimitInfo": {},
+      "upDownTimerInfo": {},
+      "titleBrandName": null,
+      "recommendWords": null,
+      "title": "test-测试标题",
+      "locType": 0
+    },
+    "allCategoryPathIdList": [35338, 35346, 35366],
+    "operateType": 1,
+    "fieldKeys": {
+      "product": [
+        "productTitle",
+        "brandId",
+        "features.model",
+        "itemNum",
+        "upcCode",
+        "productProp",
+        "videoList",
+        "skus",
+        "productDesc",
+        "promiseId",
+        "delivery",
+        "transportId",
+        "features.kshwsp",
+        "length",
+        "wide",
+        "height",
+        "weight",
+        "features.is7ToReturn",
+        "packListing",
+        "service",
+        "features.unit",
+        "features.isPayFirst;features.isOnlyIOUsPay",
+        "features.isvat",
+        "features.isCheckCode",
+        "features.zbxx",
+        "features.maxBuyTimes",
+        "features.isdangergoods",
+        "features.isWeChatStock",
+        "reserved.tsfw1",
+        "wareUpDownTimer",
+        "features.Customize"
+      ],
+      "sku": [
+        "jdPrice",
+        "incrementStockNum",
+        "shortTitle",
+        "plu",
+        "skuProps",
+        "outerId",
+        "whiteBackground",
+        "skuEnableStatus"
+      ]
+    },
+    "logUuid": "8b9f14ddf1f940b9965cbe734a036064",
+    "biddingId": null,
+    "areaId": null
+  },
+  "accessContext": { "source": "web" }
+}
